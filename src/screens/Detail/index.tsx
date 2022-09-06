@@ -2,10 +2,10 @@ import React, { useMemo, useCallback } from 'react';
 import { SafeAreaView, StyleSheet, Text, Image, View, Button, Linking } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 
-import { useAppSelector } from 'src/state/hooks';
+import { useAppSelector } from '../../state/hooks';
 
-import { selectors as feedSelectors } from 'src/state/feed'
-import { useTranslation } from 'src/i18n';
+import { selectors as feedSelectors } from '../../state/feed'
+import { useTranslation } from '../../i18n';
 
 const styles = StyleSheet.create({
     container: {

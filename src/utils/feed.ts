@@ -1,7 +1,8 @@
 const formatDate = (date: string) => new Date(date).toLocaleDateString();
 
 const sortByDate = (data: Array<any>): Array<any> => {
-  return data?.sort(
+  if (!data) return [];
+  return [...data]?.sort(
     (itemA, itemB) =>
       new Date(itemA.pubDate).valueOf() - new Date(itemB.pubDate).valueOf(),
   );

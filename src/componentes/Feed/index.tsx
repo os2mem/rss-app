@@ -4,10 +4,10 @@ import { FlatList, StyleSheet, ActivityIndicator } from 'react-native'
 import FeedItem, { FeedItemPlaceholder, FeedItemProps } from './FeedItem';
 import SearchBar from '../SearchBar';
 
-import { hooks as feedHoooks } from 'src/state/feed'
+import { hooks as feedHoooks } from '../../state/feed'
 
-import feedUtils from 'src/utils/feed'
-import { useTranslation } from 'src/i18n';
+import feedUtils from '../../utils/feed'
+import { useTranslation } from '../../i18n';
 
 
 const keyExtractor = (item: any, index: Number) => `feed-item-${item.id}-${index}`
